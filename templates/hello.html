@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block mainbody %}
+
+<h1>{{ hello }}</h1>
+<hr>
+<ul>
+    {% for item in list  reversed %}
+    <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
